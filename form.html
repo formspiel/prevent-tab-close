@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tab close prevention</title>
+		<meta name="description" content="Prototype for prevent tab close">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Tab close prevention</h1>
+		<p>Please enter some text in one of the fields below and close the Browser tab or window. Background: If any unsaved contents are available the application should ask the user what to do and not simply loose the data. Could be important 😉</p>
+
+		<form>
+			<fieldset>
+				<legend>Example 1</legend>
+				<label for="emailAddress">Email</label>
+				<br>
+				<input type="text" name="Email" id="emailAddress" class="mb-2" aria-label="Enter your email address">
+				<br>
+				<label for="passwordInput">Password</label>
+				<br>
+				<input type="password" name="password" id="passwordInput" class="mb-2" aria-label="Enter your password">
+				<br>
+				<input type="checkbox" name="checkbox" id="checkbox" class="mb-2">
+				<label for="checkbox">Do you agree?</label>
+				<br>
+				<button type="submit" >Login</button>
+			</fieldset>
+		</form>
+		<script src="scripts.js"></script>
+	</body>
+</html>
