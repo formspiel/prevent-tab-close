@@ -3,7 +3,11 @@ const beforeUnloadListener = (event) => {
 	return event.returnValue = "";
 };
 
+// Get the Input for email 
+
 const nameInput = document.querySelector("#emailAddress");
+
+// Prevent the tab to close if the input is empty
 
 nameInput.addEventListener("input", (event) => {
 	if (event.target.value !== "") {
@@ -13,7 +17,11 @@ nameInput.addEventListener("input", (event) => {
 	}
 });
 
+// Get the Input for password
+
 const passwordInput = document.querySelector("#passwordInput");
+
+// Prevent the tab to close if the input is empty
 
 passwordInput.addEventListener("input", (event) => {
 	if (event.target.value !== "") {
